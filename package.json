@@ -1,15 +1,17 @@
 {
-  "name": "gulp4legacy",
-  "description": "Simple gulp tools to add to legacy projects.",
+  "name": "muniware",
+  "description": "Basic front-end setup example",
   "version": "0.1.0",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "author": {
     "name": "Lift Interactive",
     "url": "http://liftinteractive.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://URL.git"
+    "url": "git://github.com/l1f7/muniware.git"
   },
   "dependencies": {},
   "devDependencies": {
