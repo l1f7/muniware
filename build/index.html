@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Muniware</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/styles/muniware.css">
+  </head>
+  <body>
+    <aside class="mw-sidebar">
+      <div class="mw-sidebar-container">
+        <header class="mw-sidebar-head">
+          <a class="mw-city-logo" href="/">
+            <img src="/assets/images/logo-red_deer.png" alt="City of Red Deer">
+          </a>
+
+          <button class="btn hidden-md-up" data-toggle="collapse" data-target="#mw-sidenav" aria-expanded="false">
+            <span class="sr-only">Toggle nav</span>
+            Menu
+          </button>
+
+          <address class="mw-city-contact hidden-md-down">
+            123 Muniware Street, AB<br>
+            204-555-5555<br>
+            email@account.com
+          </address>
+        </header>
+
+        <nav class="mw-sidebar-nav collapse" id="mw-sidenav">
+          <ul class="nav mw-nav">
+            <li>
+              <a href="/dashboard/">
+                <i class="fa fa-fw fa-list-alt" aria-hidden="true"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="/accounts/">
+                <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>
+                My Accounts
+              </a>
+            </li>
+            <li>
+              <a href="/search-property/">
+                <i class="fa fa-fw fa-home" aria-hidden="true"></i>
+                Search Property
+              </a>
+            </li>
+            <li>
+              <a href="/search-business/">
+                <i class="fa fa-fw fa-briefcase" aria-hidden="true"></i>
+                Search Business
+              </a>
+            </li>
+            <li>
+              <a href="/search-tax/">
+                <i class="fa fa-fw fa-dollar" aria-hidden="true"></i>
+                Search Tax Certificates
+              </a>
+            </li>
+            <li>
+              <a href="/search-cemetery/">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15.3 15.3V6.8c0-3.74-3.06-6.8-6.8-6.8-3.74 0-6.8 3.06-6.8 6.8v8.5H0V17h17v-1.7h-1.7zm-3.4-9.35H9.35v4.25h-1.7V5.95H5.1v-1.7h2.55v-1.7h1.7v1.7h2.55v1.7z"/></svg>
+                Search Cemetery
+              </a>
+            </li>
+            <li>
+              <a href="/profile/">
+                <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                My Profile
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="mw-sidebar-foot hidden-md-down">
+          <p>
+            <small><a href="/tos/">Terms of Service</a><br>
+            <a href="/return-policy/">Return &amp; Refund Policy</a></small>
+          </p>
+        </footer>
+      </div>
+    </aside>
+
+    <main class="mw-main">
+      <div class="mw-main-container">
+
+        <div class="jumbotron mw-jumbo-image m-b-3" style="background-image:url(https://placem.at/places?w=960&h=300);">
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+
+            <div class="card">
+              <h4 class="card-header text-xs-center">Login to view more details</h4>
+              <div class="card-block">
+                <form>
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <span class="input-group-addon" id="basic-addon1">
+                        <i class="fa fa-fw fa-hashtag"></i>
+                      </span>
+                      <input class="form-control" type="text" placeholder="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <span class="input-group-addon" id="basic-addon2">
+                        <i class="fa fa-fw fa-asterisk"></i>
+                      </span>
+                      <input class="form-control" type="password" placeholder="PIN" aria-describedby="basic-addon2">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="c-input c-checkbox">
+                      <input type="checkbox" value="">
+                      <span class="c-indicator"></span>
+                      Remember me
+                    </label>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Login</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="/scripts/plugins.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

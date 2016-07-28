@@ -1,0 +1,26 @@
+//
+// Custom table styles.
+//
+
+.mw-table {
+  overflow-x: auto;
+  border: 1px solid $brand-grey;
+  border-radius: $border-radius-lg;
+
+  .table-striped {
+    margin-bottom: 0;
+
+    th,
+    td {
+      border-top: 0;
+    }
+
+    thead th {
+      border-bottom: 0;
+    }
+
+    [scope="row"] {
+      font-weight: 600;
+    }
+  }
+}

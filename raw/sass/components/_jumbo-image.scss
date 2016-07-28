@@ -1,0 +1,13 @@
+//
+// Jumbotron image.
+//
+// Add this class to a Bootstrap jumbotron, with an inline style for the
+// background-image.
+//
+
+.mw-jumbo-image {
+  min-height: 300px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,48 @@
+.mw-search-options {
+
+  .nav-tabs {
+    border-bottom: 0;
+
+    .nav-item {
+      background-color: $white;
+
+      @include media-breakpoint-down(md) {
+        float: none;
+      }
+
+      &.open {
+
+        .nav-link {
+          border-color: $brand-grey $brand-grey $white;
+        }
+      }
+
+      + .nav-item {
+        margin-top: 0;
+        margin-left: -1px;
+
+        @include media-breakpoint-down(md) {
+          margin-top: -2px;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .nav-link {
+      border: 1px solid $brand-grey;
+
+      &.active {
+        border-color: $brand-grey $brand-grey $white;
+      }
+    }
+  }
+
+  .tab-pane {
+    border: 1px solid $brand-grey;
+    border-radius: 0 $border-radius-lg $border-radius-lg;
+  }
+
+  .c-checkbox {
+    margin-bottom: 20px;
+  }
+}

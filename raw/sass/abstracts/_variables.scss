@@ -1,0 +1,86 @@
+//
+// Global variables.
+//
+// Don't put any css styles into this file, because it's included
+// multiple times.
+//
+
+
+//
+// Colour variables.
+//
+
+// Brand colours.
+$brand-red:    #e74c3c;
+$brand-yellow: #f1c40f;
+$brand-green:  #2ecc71;
+$brand-blue:   #2385d8;
+$brand-grey:   #8a98a8;
+
+// Secondary palette.
+$red-muted:    #e26656;
+$red:          #ed4b4b;
+$orange:       #f37748;
+$orange-muted: #f19953;
+$orange-dark:  #e67e22;
+$green:        #34b977;
+$green-muted:  #659b79;
+$teal:         #40c6ba;
+$blue:         #047ebe;
+$blue-overlay: #207eb0;
+$blue-muted:   #64819f;
+$blue-dark:    #4765a0;
+$purple:       #9b6bcc;
+$purple-muted: #7f6ea5;
+$violet:       #b46c95;
+
+// Greyscale.
+$white:           #fff;
+$white-secondary: rgba($white, 0.7);
+$white-muted:     rgba($white, 0.3);
+$white-divider:   rgba($white, 0.12);
+
+$grey-100:        #f8f8f8;
+$grey-200:        #eee;
+$grey-300:        #c0ccda;
+$grey-400:        #777;
+$grey-500:        #676a6c;
+$grey-600:        #5e5e5e;
+$grey-800:        #273444;
+$grey-900:        #222;
+
+$black-actual:    #000;
+$black:           rgba($black-actual, 0.87);
+$black-secondary: rgba($black-actual, 0.54);
+$black-muted:     rgba($black-actual, 0.38);
+$black-divider:   rgba($black-actual, 0.12);
+
+
+
+
+$fa-font-path: "../assets/fonts";
+
+
+
+
+$brand-primary: $brand-blue;
+
+$body-color: $grey-800;
+
+$font-family-base: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+
+$table-bg-accent: rgba($brand-primary, 0.1);
+
+$input-border-color: $brand-grey;
+
+$nav-tabs-active-link-hover-color: $body-color;
+
+$pagination-padding-x:    1rem;
+$pagination-border-color: $brand-grey;
+$pagination-hover-border: $brand-grey;
+$pagination-active-color: $black;
+$pagination-active-bg:    #c0ccda;
+$pagination-active-border: $brand-grey;
+
+$card-border-color: $brand-grey;
+$card-cap-bg:       transparent;

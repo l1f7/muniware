@@ -1,0 +1,48 @@
+.selectize-input {
+  border-color: $input-border-color;
+
+  &.focus {
+    border-color: $brand-primary;
+    box-shadow: inset 0 0 0 1px $brand-primary;
+  }
+
+  > input {
+    padding: 6px 0 !important;
+    // margin-bottom: 3px !important;
+    // border: 1px solid transparent !important;
+  }
+}
+
+.selectize-control.multi {
+  .selectize-input {
+    > div {
+      padding: 6px 10px;
+      color: $brand-primary;
+      background-color: #eff6ff;
+      border: 1px solid $brand-primary;
+      border-radius: 5px;
+
+      &.active {
+        color: $white;
+        background-color: $brand-primary;
+        border: 1px solid $brand-primary;
+      }
+    }
+  }
+}
+
+
+.selectize-dropdown {
+  margin-top: 0;
+  border-color: $input-border-color;
+  border-radius: 5px;
+
+  [data-selectable] {
+    padding: 6px 10px;
+  }
+
+  .active {
+    color: $white;
+    background-color: $brand-primary;
+  }
+}

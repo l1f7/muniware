@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Muniware</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/styles/muniware.css">
+  </head>
+  <body>
+    <aside class="mw-sidebar">
+      <div class="mw-sidebar-container">
+        <header class="mw-sidebar-head">
+          <a class="mw-city-logo" href="/">
+            <img src="/assets/images/logo-red_deer.png" alt="City of Red Deer">
+          </a>
+
+          <button class="btn hidden-md-up" data-toggle="collapse" data-target="#mw-sidenav" aria-expanded="false">
+            <span class="sr-only">Toggle nav</span>
+            Menu
+          </button>
+
+          <address class="mw-city-contact hidden-md-down">
+            123 Muniware Street, AB<br>
+            204-555-5555<br>
+            email@account.com
+          </address>
+        </header>
+
+        <nav class="mw-sidebar-nav collapse" id="mw-sidenav">
+          <ul class="nav mw-nav">
+            <li>
+              <a href="/dashboard/">
+                <i class="fa fa-fw fa-list-alt" aria-hidden="true"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="/accounts/">
+                <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>
+                My Accounts
+              </a>
+            </li>
+            <li>
+              <a href="/search-property/">
+                <i class="fa fa-fw fa-home" aria-hidden="true"></i>
+                Search Property
+              </a>
+            </li>
+            <li>
+              <a class="active" href="/search-business/">
+                <i class="fa fa-fw fa-briefcase" aria-hidden="true"></i>
+                Search Business
+              </a>
+            </li>
+            <li>
+              <a href="/search-tax/">
+                <i class="fa fa-fw fa-dollar" aria-hidden="true"></i>
+                Search Tax Certificates
+              </a>
+            </li>
+            <li>
+              <a href="/search-cemetery/">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15.3 15.3V6.8c0-3.74-3.06-6.8-6.8-6.8-3.74 0-6.8 3.06-6.8 6.8v8.5H0V17h17v-1.7h-1.7zm-3.4-9.35H9.35v4.25h-1.7V5.95H5.1v-1.7h2.55v-1.7h1.7v1.7h2.55v1.7z"/></svg>
+                Search Cemetery
+              </a>
+            </li>
+            <li>
+              <a href="/profile/">
+                <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                My Profile
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="mw-sidebar-foot hidden-md-down">
+          <p>
+            <small><a href="/tos/">Terms of Service</a><br>
+            <a href="/return-policy/">Return &amp; Refund Policy</a></small>
+          </p>
+        </footer>
+      </div>
+    </aside>
+
+    <main class="mw-main">
+      <div class="mw-main-container">
+
+        <h1 class="text-xs-center m-b-3">Search Business</h1>
+
+        <div class="mw-search-options m-b-3">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#name" role="tab">Name</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#category" role="tab">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#address" role="tab">Address</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane" id="name" role="tabpanel">
+              <div class="mw-tab-container">
+                ...
+              </div>
+            </div>
+            <div class="tab-pane active" id="category" role="tabpanel">
+              <div class="mw-tab-container">
+                <form>
+                  <div class="form-group">
+                    <label for="selectN">Search categories</label>
+                    <select class="js-selectize" id="selectN" placeholder="Select one or more categories to search by" name="category[]" multiple>
+                      <option value="opt1">Accommodations &amp; Food service</option>
+                      <option value="opt2">Business Consulting Services</option>
+                      <option value="opt3">Health Care &amp; Social Assistance</option>
+                      <option value="opt4" selected>Photography &amp; Framing</option>
+                      <option value="opt5">Real Estate &amp; Property Management</option>
+                      <option value="opt6">Accounting</option>
+                      <option value="opt7">Communications &amp; Electronic</option>
+                      <option value="opt8">Interior Decorators</option>
+                      <option value="opt9">Plumbing Heating Electric</option>
+                      <option value="opt10">Refrigeration</option>
+                      <option value="opt11">Agriculture Services</option>
+                      <option value="opt12">Concrete Services</option>
+                      <option value="opt13">Janitorial Services</option>
+                      <option value="opt14">Private Tutoring</option>
+                      <option value="opt15">Renovator</option>
+                    </select>
+                  </div>
+
+                  <button class="btn btn-primary" role="submit">Search</button>
+                </form>
+                <!-- <div class="collapse" id="moreCategories">
+                  <div class="checkbox-row">
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Accommodations &amp; Food service
+                      </label>
+                    </div>
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Business Consulting Services
+                      </label>
+                    </div>
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Health Care &amp; Social Assistance
+                      </label>
+                    </div>
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Photography &amp; Framing
+                      </label>
+                    </div>
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Real Estate &amp; Property Management
+                      </label>
+                    </div>
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Accounting
+                      </label>
+                    </div>
+                    <div class="checkbox-col">
+                      <label class="c-input c-checkbox">
+                        <input type="checkbox" value="">
+                        <span class="c-indicator"></span>
+                        Communications &amp; Electronic
+                      </label>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <!-- <a class="mw-tab-expand" data-toggle="collapse" href="#moreCategories" aria-expanded="false" aria-controls="moreCategories">
+                <i class="fa fa-bars"></i>
+              </a> -->
+            </div>
+            <div class="tab-pane" id="address" role="tabpanel">
+              <div class="mw-tab-container">...</div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-xs-center m-b-2">Your results found by Category</h4>
+        <h5 class="">Photography &amp; Framing</h5>
+        <div class="mw-table m-b-3">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone#</th>
+                <th>Map</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">iPhotography</th>
+                <td>9944 78 Ave<br>Edmonton, AB</td>
+                <td>780-444-4444</td>
+                <td><a href="#" target="_blank">View in Google Maps</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Exposure</th>
+                <td>10326 81 Ave<br>Edmonton, AB</td>
+                <td>780-444-4444</td>
+                <td><a href="#" target="_blank">View in Google Maps</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <nav class="text-xs-center">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </main>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="/scripts/plugins.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

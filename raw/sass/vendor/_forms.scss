@@ -1,0 +1,50 @@
+//
+// Update Bootstrap custom checkbox styles.
+//
+.c-checkbox {
+  display: inline-block;
+  font-size: $font-size-sm;
+  color: inherit;
+
+  > input {
+
+    &:checked {
+      ~ .c-indicator {
+        background-color: $white;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4IDgiPjxwYXRoIGZpbGw9IiMzZTk1ZGYiIGQ9Ik02LjQgMWwtLjcuNy0yLjggMi44LS44LS44LS43LS43TDAgNC40bC43LjcgMS41IDEuNS43LjcuNy0uNyAzLjUtMy41LjctLjdMNi40IDF6Ii8+PC9zdmc+);
+        box-shadow: inset 0 0 0 2px $brand-primary;
+      }
+
+      &:focus {
+        ~ .c-indicator {
+          box-shadow: 0 0 0 1px $white, 0 0 0 3px $brand-primary, inset 0 0 0 2px $brand-primary;
+        }
+      }
+    }
+
+    &:focus ~ .c-indicator {
+      box-shadow: 0 0 0 1px $white, 0 0 0 3px $brand-primary, inset 0 0 0 2px $brand-grey;
+    }
+  }
+
+  .c-indicator {
+    border-radius: 0;
+  }
+}
+
+.c-indicator {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px $brand-grey;
+  border: 0;
+}
+
+
+
+
+.form-control {
+  &:focus {
+    box-shadow: inset 0 0 0 1px $brand-primary;
+  }
+}

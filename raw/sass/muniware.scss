@@ -1,0 +1,39 @@
+//
+// Main style manifest.
+//
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,800&lang=en");
+
+// 1. Config & helpers.
+@import "abstracts/variables";
+// @import "abstracts/functions";
+// @import "abstracts/mixins";
+// @import "abstracts/placeholders";
+
+// 2. Vendor & plugin styles.
+@import "raw/bower/font-awesome/scss/font-awesome";
+@import "raw/bower/bootstrap/scss/bootstrap";
+@import "raw/bower/selectize/dist/css/selectize.bootstrap3";
+
+// 2a. Vendor style overrides.
+@import "vendor/forms";
+@import "vendor/selectize";
+
+// 3. Base stuff.
+@import "base/typography";
+
+// 4. Layout section styles.
+@import "layout/sidebar";
+@import "layout/main";
+@import "layout/search";
+
+// 5. Components.
+@import "components/jumbo-image";
+@import "components/tables";
+@import "components/tabs";
+
+// 6. Page-specific styles.
+// @import "pages/dashboard";
+
+// Shamefile. Throw quick fixes/hacks here for later refactoring.
+@import "shame";

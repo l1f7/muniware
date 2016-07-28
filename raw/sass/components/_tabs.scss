@@ -1,0 +1,22 @@
+//
+// Container styles for tab components.
+//
+
+.mw-tab-container {
+  padding: ($grid-gutter-width * 1.5) ($grid-gutter-width * 2);
+}
+
+.mw-tab-expand {
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  color: $white;
+  text-align: center;
+  background-color: $brand-grey;
+  border-radius: 0 0 ($border-radius-lg - 1) ($border-radius-lg - 1);
+
+  &:hover,
+  &:focus {
+    background-color: $grey-300;
+  }
+}

@@ -1,0 +1,28 @@
+
+:root {
+  font-size: ($font-size-base - 4);
+
+  @include media-breakpoint-up(md) {
+    font-size: ($font-size-base - 2);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-base;
+  }
+}
+
+
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
