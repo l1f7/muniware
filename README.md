@@ -1,6 +1,7 @@
 # Muniware styles
 
 ## Running the demo locally.
+0. Ensure `bower`, and `gulp` are installed globally: `npm install -g bower gulp`
 1. After downloading or cloning this repo, run `npm install`. This will install the development environment dependencies and automatically run `bower install` after completion—installing the front-end dependencies.
 2. Run `gulp styles`, `gulp scripts`, `gulp plugins`, and `gulp images` to compile the static assets.
 3. Run `gulp serve` to open the demo in a browser.
